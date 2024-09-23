@@ -1,4 +1,4 @@
-# CS1_GestionBibliotecaria_EquipoAlfa
+# CS1_GestionBibliotecaria_Equipo_L_y_D
 
 **Nombre de la Materia:** Construccion de software
 
