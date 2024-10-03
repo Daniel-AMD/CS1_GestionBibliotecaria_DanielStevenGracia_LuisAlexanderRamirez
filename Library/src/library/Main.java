@@ -31,12 +31,12 @@ public class Main {
                 userType = scanner.nextInt();
                 scanner.nextLine(); // Limpia el buffer
             } catch (InputMismatchException e) {
-                System.out.println("Entrada invÃ¡lida. Por favor, ingrese un nÃºmero.");
+                System.out.println("Entrada invalida. Por favor, ingrese un numero.");
                 scanner.nextLine(); // Limpiar el buffer
                 continue;
             }
 
-            // Registrar la persona segÃºn el tipo seleccionado
+            // Registrar la persona segun el tipo seleccionado
             System.out.println("Ingrese su ID:");
             String personId = scanner.nextLine();
             System.out.println("Ingrese su nombre:");
@@ -56,15 +56,15 @@ public class Main {
                     person = new Administrative(personId, firstName, lastName);
                     break;
                 default:
-                    System.out.println("Tipo de usuario invÃ¡lido.");
+                    System.out.println("Tipo de usuario invalido.");
                     continue;
             }
 
             library.registerPerson(person);
 
-            // Solicitar el nÃºmero de libros a prestar
+            // Solicitar el numero de libros a prestar
             try {
-                System.out.println("Ingrese el nÃºmero de libros que desea prestar:");
+                System.out.println("Ingrese el numero de libros que desea prestar:");
                 int numBooks = scanner.nextInt();
                 scanner.nextLine(); // Limpia el buffer
                 if (person.canLoan()) {
@@ -74,10 +74,10 @@ public class Main {
                         library.loanMaterial(person.getId(), materialId);
                     }
                 } else {
-                    System.out.println("Has excedido el lÃ­mite de prÃ©stamos permitidos.");
+                    System.out.println("Has excedido el li­mite de prestamos permitidos.");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Entrada invÃ¡lida. Por favor, ingrese un nÃºmero.");
+                System.out.println("Entrada invalida. Por favor, ingrese un numero.");
                 scanner.nextLine(); // Limpiar el buffer
             }
         }

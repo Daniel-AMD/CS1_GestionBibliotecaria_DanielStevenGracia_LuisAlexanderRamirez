@@ -6,16 +6,15 @@ public class Teacher extends Person {
 
     public Teacher(String id, String firstName, String lastName) {
         super(id, firstName, lastName);
-     }
-
-    @Override
-    public int getMaxLoans() {
-        return MAX_LOANS;
     }
 
     @Override
     public boolean canLoan() {
         return getCurrentLoans() < MAX_LOANS;
     }
+    
+    @Override
+    public int getMaxLoans() {
+        return MAX_LOANS;
+    }
 }
-
