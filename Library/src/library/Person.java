@@ -5,8 +5,8 @@ public abstract class Person {
     private String id;
     private String firstName;
     private String lastName;
-    private int currentLoans;
-    private int renewals;
+    private int currentLoans; // Numero actual de prestamos
+    private int renewals; // Numero de renovaciones
 
     public Person(String id, String firstName, String lastName) {
         this.id = id;
@@ -53,8 +53,10 @@ public abstract class Person {
     }
 
     public boolean canRenew() {
-        return renewals < 3;
+        return renewals < 3; // Verifica si la persona puede renovar
     }
 
-    public abstract boolean canLoan();
+    public abstract boolean canLoan(); // Verifica si la perosna puede hacer mas prestamos
+    
+    public abstract int  getMaxLoans (); //Metodo para poder obtener el numero maximo de prestamos permitidos
 }

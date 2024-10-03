@@ -10,7 +10,13 @@ public class Administrative extends Person {
     }
 
     @Override
+    public int getMaxLoans() {
+        return MAX_LOANS;
+    }
+
+    @Override
     public boolean canLoan() {
         return getCurrentLoans() < MAX_LOANS;
     }
 }
+

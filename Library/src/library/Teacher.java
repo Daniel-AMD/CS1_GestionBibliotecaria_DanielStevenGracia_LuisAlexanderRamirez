@@ -6,6 +6,11 @@ public class Teacher extends Person {
 
     public Teacher(String id, String firstName, String lastName) {
         super(id, firstName, lastName);
+     }
+
+    @Override
+    public int getMaxLoans() {
+        return MAX_LOANS;
     }
 
     @Override
@@ -13,3 +18,4 @@ public class Teacher extends Person {
         return getCurrentLoans() < MAX_LOANS;
     }
 }
+

@@ -9,6 +9,11 @@ public class Student extends Person {
 
     @Override
     public boolean canLoan() {
-        return getCurrentLoans() < MAX_LOANS;
+        return getCurrentLoans() < MAX_LOANS; // Verifica si el estudiante puede pedir mÃ¡s prÃ©stamos
+    }
+
+    @Override
+    public int getMaxLoans() {
+        return MAX_LOANS;
     }
 }

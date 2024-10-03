@@ -85,7 +85,7 @@ public class Library {
             person.returnLoan();
             material.increaseQuantity(1);
             history.add(new Movement(materialId, "Devolucion", personId));
-            System.out.println("Devolución realizada exitosamente.");
+            System.out.println("Devolucion realizada exitosamente.");
         } else {
             System.out.println("Persona o material no encontrado.");
         }
@@ -99,7 +99,7 @@ public class Library {
     }
 
     // Buscar persona por ID
-    private Person findPersonById(String id) {
+    public Person findPersonById(String id) {
         for (Person person : people) {
             if (person.getId().equals(id)) {
                 return person;
@@ -109,7 +109,7 @@ public class Library {
     }
 
     // Buscar material por ID
-    private Material findMaterialById(String id) {
+    public Material findMaterialById(String id) {
         for (Material material : materials) {
             if (material.getId().equals(id)) {
                 return material;
