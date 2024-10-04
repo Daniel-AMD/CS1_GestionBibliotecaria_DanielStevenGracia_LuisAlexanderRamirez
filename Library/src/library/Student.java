@@ -9,7 +9,7 @@ public class Student extends Person {
 
     @Override
     public boolean canLoan() {
-        return getCurrentLoans() < MAX_LOANS; // Verifica si el estudiante puede pedir mÃ¡s prÃ©stamos
+        return getCurrentLoans() < MAX_LOANS; // Verifica si el estudiante puede pedir mass prestamos
     }
 
     @Override
