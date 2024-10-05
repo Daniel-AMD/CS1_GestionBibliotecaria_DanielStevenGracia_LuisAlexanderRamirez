@@ -15,9 +15,11 @@ El proyecto que realizamos es un sistema de gestion bibliotecaria que permite el
 Se implementa un sistema básico de préstamos en una biblioteca que maneja a distintos tipos de personas (estudiantes, docentes y administrativos) y su interacción con materiales académicos. Este programa está diseñado para simular la operación básica de una biblioteca con reglas personalizadas según el tipo de usuario. Cada persona tiene un límite de préstamos y puede devolver o renovar sus materiales. El sistema registra cada movimiento para mantener un historial claro de las operaciones realizadas.
 
 **Requerimientos:**
-* 
+Lenguaje: java 17+
+Gestión de dependencia: Maven
+Editor recomendado: NetBeans, VS Code 
  
 **Instrucciones de compilación y ejecución:**
-
+Para compilar el proyecto usando Maven, ejecuta el siguiente comando desde la raíz del proyecto: mvn compile
 
 **Licencia:** MIT
